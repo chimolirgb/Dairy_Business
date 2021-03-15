@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <div class="production">
+        <div class="production-form">
+            <h3>Production Form</h3>
+            <br>
+            <form id="production-form">
+                <label>Shed</label>
+                <select id="shed">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <br>
+                <br>
+                <label>Production in Litres</label>
+                <br>
+                <br>
+                <input type="number" id="production">
+                <br>
+                <br>
+                <button type="submit" onclick="return updateProduction()" onsubmit="return false">Submit</button>
+            </form>
+        </div>
+
+        <div class="totals">
+            <button onclick="return getTotalProduction()">Calculate Total Production</button>
+        </div>
+        <div class="income">
+            <form id="incomeszx-form">
+
+                <label>Price per litre</label>
+                <br>
+                <br>
+                <input type="number" id="price">
+                <br>
+                <br>
+                <button>Calculate Total Income</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
